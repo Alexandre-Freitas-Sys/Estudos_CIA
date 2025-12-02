@@ -66,7 +66,7 @@ A página segue a seguinte organização:
 
 ---
 
-## 📚 Referências
+## 📚 Referência & Autor 
 
 Conteúdo baseado na documentação oficial disponível em:
 
@@ -85,7 +85,3 @@ Este repositório é ideal para:
 * Estudantes iniciando em **desenvolvimento web**;
 * Professores que desejam um material simples para introdução ao HTML;
 * Pessoas que buscam um guia rápido e direto ao ponto.
-
----
-
-Se quiser evoluir este projeto, adicionar novas seções ou transformar o manual em um site completo, posso ajudar!
