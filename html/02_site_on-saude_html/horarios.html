@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre Freitas">
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* =========================
+            PÁGINA: HORÁRIOS
+        ========================= */
+
+        #conteudo-horarios {
+        padding: 5px;
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Títulos */
+        #conteudo-horarios h2 {
+        margin-bottom: 1rem;
+        color: #1f3c88;
+        }
+
+        /* Blocos principais */
+        .bloco-horarios,
+        .bloco-precos {
+        margin-bottom: 3rem;
+        }
+
+        /* Layout lado a lado (texto + imagem) */
+        .layout-horarios {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        }
+
+        /* Conteúdo textual */
+        .info-horarios {
+        flex: 2;
+        }
+
+        .info-horarios p {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        color: #333;
+        }
+
+        /* Imagem */
+        .imagem-horarios {
+        flex: 1;
+        text-align: center;
+        }
+
+        .imagem-horarios img {
+        width: 100%;
+        max-width: 300px;
+        max-height: 200px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 8px;
+        }
+
+        .imagem-horarios figcaption {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: #666;
+        }
+
+        /* =========================
+        TABELAS
+        ========================= */
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        }
+
+        caption {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #1f3c88;
+        }
+
+        thead {
+        background-color: #1f3c88;
+        color: #fff;
+        }
+
+        th,
+        td {
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        text-align: center;
+        }
+
+        tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+        }
+
+        tbody tr:hover {
+        background-color: #eef2ff;
+        }
+
+        .cab-preco {
+           background-color: #085f1d 
+        }
+
+       
+        
+
+    </style>
+
+    <title>ON-Saúde Clínica Médica</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <iframe  src="menu.html" frameborder="0" style="width: 100%; border: none; height: 100%;" scrolling="no"></iframe>
+        </div>
+    
+    
+        <div class="main">
+
+        <div class="header">
+                <iframe src="header.html"  frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+    
+        <div class="content">
+                
+            <main id="conteudo-horarios">
+
+                <!-- Seção: Horário de Atendimento -->
+                <section id="horario-atendimento" aria-labelledby="titulo-horarios">
+                    
+                    <article class="bloco-horarios">
+                    <header>
+                        <h2 id="titulo-horarios">Horário de Atendimento</h2>
+                    </header>
+
+                    <div class="layout-horarios">
+                        
+                        <!-- Texto e tabela -->
+                        <div class="info-horarios">
+                            <p>
+                                Nossa clínica oferece atendimento em diferentes especialidades,
+                                com horários flexíveis para melhor atender você e sua família.
+                                Confira abaixo os horários de funcionamento de cada serviço,
+                                de acordo com o dia da semana.
+                            </p>
+
+                        <table class="tabela-horarios">
+                            <caption>Quadro de Horários por Especialidade</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col">Serviços</th>
+                                <th scope="col">Segunda a Sexta</th>
+                                <th scope="col">Sábados</th>
+                                <th scope="col">Feriados</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Clínica Geral</th>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 15h</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Psicologia</th>
+                                <td>08h - 19h</td>
+                                <td>08h - 14h</td>
+                                <td>08h - 14h</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pediatria</th>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>08h - 15h</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Oftalmologia</th>
+                                <td>08h - 19h</td>
+                                <td>08h - 18h</td>
+                                <td>-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+
+                        <!-- Imagem -->
+                        <figure class="imagem-horarios">
+                        <img 
+                            src="imagens/agenda.png" 
+                            alt="Ilustração representando o quadro de horários de atendimento da clínica"
+                            width="300"
+                            height="200"
+                            
+                        >
+                        <figcaption>
+                            Horários organizados para melhor atender nossos pacientes
+                        </figcaption>
+                        </figure>
+
+                    </div>
+                    </article>
+                </section>
+
+                <!-- Seção: Tabela de Preços -->
+                <section id="tabela-precos" aria-labelledby="titulo-precos">
+                    
+                    <article class="bloco-precos">
+                    <header>
+                        <h2 id="titulo-precos">Tabela de Preços</h2>
+                    </header>
+
+                    <p>
+                        Os valores dos atendimentos podem variar conforme o dia da semana.
+                        Consulte abaixo nossa tabela de preços por especialidade.
+                    </p>
+
+                    <table class="tabela-precos">
+                        <caption>Valores dos Serviços</caption>
+                        <thead>
+                        <tr class="cab-preco">
+                            <th scope="col">Serviços</th>
+                            <th scope="col">Segunda a Sexta</th>
+                            <th scope="col">Sábados</th>
+                            <th scope="col">Feriados</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Clínica Geral</th>
+                            <td>R$ 150,00</td>
+                            <td>R$ 180,00</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Psicologia</th>
+                            <td>R$ 180,00</td>
+                            <td>R$ 200,00</td>
+                            <td>R$ 220,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pediatria</th>
+                            <td>R$ 160,00</td>
+                            <td>R$ 190,00</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Oftalmologia</th>
+                            <td>R$ 200,00</td>
+                            <td>R$ 230,00</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </article>
+                </section>
+
+            </main>
+
+                                
+        </div>
+    
+        <div class="footer">
+                <iframe src="footer.html" frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre Freitas">
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* ==============================
+        CONTEÚDO - PÁGINA CONTATO
+        ============================== */
+
+        #conteudo-contato {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        /* Títulos */
+        #conteudo-contato h1,
+        #conteudo-contato h2 {
+            color: #1f4e79;
+            margin-bottom: 15px;
+        }
+
+        #conteudo-contato h1 {
+            font-size: 2rem;
+        }
+
+        #conteudo-contato h2 {
+            font-size: 1.5rem;
+        }
+
+        /* Parágrafos */
+        #conteudo-contato p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* ==============================
+        INFORMAÇÕES DE CONTATO
+        ============================== */
+
+        #informacoes-contato {
+            margin-bottom: 40px;
+        }
+
+        .lista-contato {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-contato li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .lista-contato a {
+            color: #1f4e79;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lista-contato a:hover {
+            text-decoration: underline;
+        }
+
+        /* ==============================
+        MAPA
+        ============================== */
+
+        #mapa-clinica {
+            margin-bottom: 50px;
+        }
+
+        #mapa-clinica iframe {
+            border-radius: 8px;
+        }
+
+        /* ==============================
+        FORMULÁRIO DE CONTATO
+        ============================== */
+
+        #formulario-contato {
+            background-color: #f5f7fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        #formulario-contato form {
+            max-width: 600px;
+        }
+
+        /* Campos do formulário */
+        .campo-form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .campo-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .campo-form input,
+        .campo-form textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .campo-form input:focus,
+        .campo-form textarea:focus {
+            outline: none;
+            border-color: #1f4e79;
+        }
+
+        /* ==============================
+        BOTÕES
+        ============================== */
+
+        .botoes-form {
+            display: flex;
+            gap: 15px;
+        }
+
+        .botoes-form button {
+            padding: 10px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botoes-form button[type="submit"] {
+            background-color: #1f4e79;
+            color: #fff;
+        }
+
+        .botoes-form button[type="submit"]:hover {
+            background-color: #163a59;
+        }
+
+        .botoes-form button[type="reset"] {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        .botoes-form button[type="reset"]:hover {
+            background-color: #b3b3b3;
+        }
+
+        
+
+    </style>
+
+    <title>Contato ON-Saúde Clínica Médica</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <iframe  src="menu.html" frameborder="0" style="width: 100%; border: none; height: 100%;" scrolling="no"></iframe>
+        </div>
+    
+    
+        <div class="main">
+
+        <div class="header">
+                <iframe src="header.html"  frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+    
+        <div class="content">
+                
+            <!-- CONTEÚDO DA PÁGINA CONTATO -->
+            <main id="conteudo-contato">
+
+                <!-- Seção de informações de contato -->
+                <section id="informacoes-contato">
+                    <h1>Contato</h1>
+
+                    <p>
+                        Entre em contato conosco para agendar consultas, tirar dúvidas ou obter mais informações.
+                    </p>
+
+                    <ul class="lista-contato">
+                        <li>
+                            <strong>Telefone / WhatsApp:</strong>
+                            <a href="tel:+5531900000000">(31) 9 0000-0000</a>
+                        </li>
+                        <li>
+                            <strong>Endereço:</strong>
+                            Praça do Encontro, Betim - MG
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Seção do formulário de contato -->
+                <section id="formulario-contato">
+                    <h2>Fale conosco</h2>
+
+                    <form action="" method="post">
+
+                        <!-- Campo Nome -->
+                        <div class="campo-form">
+                            <label for="nome">Nome</label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                placeholder="Digite seu nome"
+                                required>
+                        </div>
+
+                        <!-- Campo E-mail -->
+                        <div class="campo-form">
+                            <label for="email">E-mail</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Digite seu e-mail"
+                                required>
+                        </div>
+
+                        <!-- Campo Assunto -->
+                        <div class="campo-form">
+                            <label for="assunto">Assunto</label>
+                            <input 
+                                type="text" 
+                                id="assunto" 
+                                name="assunto" 
+                                placeholder="Assunto da mensagem"
+                                required>
+                        </div>
+
+                        <!-- Campo Mensagem -->
+                        <div class="campo-form">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                rows="5"
+                                placeholder="Digite sua mensagem"
+                                required></textarea>
+                        </div>
+
+                        <!-- Botões -->
+                        <div class="botoes-form">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+
+                    </form>
+                </section>
+
+                <!-- Seção do mapa -->
+                <section id="mapa-clinica">
+                    <h2>Onde estamos</h2>
+
+                    <!-- Iframe Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.299257436845!2d-44.21508819149991!3d-19.963355707226754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c3979ef7f4ab%3A0xb528af0537b1c8a4!2sPra%C3%A7a%20do%20Encontro!5e0!3m2!1spt-BR!2sbr!4v1767378950728!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
+                
+
+            </main>
+
+                            
+        </div>
+    
+        <div class="footer">
+                <iframe src="footer.html" frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexandre Freitas">
+    <link rel="stylesheet" href="base.css">
+    <!-- CSS mínimo apenas para leitura e destaque visual -->
+    <style>
+        body {
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        main {
+            padding: 10px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #1E88E5;
+        }
+       
+        /* Garante layout horizontal */
+        #sobre-clinica .sobre-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        }
+
+        /* Texto ocupa mais espaço */
+        #sobre-clinica .sobre-texto {
+            flex: 2;
+            text-align: justify;
+        }
+
+        /* Imagem à direita */
+        #sobre-clinica .sobre-imagem {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Evita quebra inesperada da imagem */
+        #sobre-clinica img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    </style>
+
+    <title>Sobre a ON-Saúde Clínica Médica</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <iframe  src="menu.html" frameborder="0" style="width: 100%; border: none; height: 100%;" scrolling="no"></iframe>
+        </div>
+    
+    
+        <div class="main">
+
+        <div class="header">
+                <iframe src="header.html"  frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+    
+        <div class="content">
+                
+            <!-- Conteúdo principal da página -->
+    <main>
+
+        <!-- Título principal do conteúdo -->
+        <h1>Sobre a Clínica <span style="color: #43A047;">ON-Saúde</span></h1>
+
+        <section id="sobre-clinica">
+
+            <!-- Forçando layout lado a lado apenas aqui -->
+            <div class="sobre-container">
+
+                <article class="sobre-texto">
+                    <h2>Quem Somos</h2>
+
+                    <p>
+                        A <strong>Clínica Vida & Saúde</strong> é um espaço dedicado ao cuidado integral da saúde,
+                        oferecendo atendimento <em>humanizado</em>, ético e de alta qualidade.
+                    </p>
+
+                    <p>
+                        Nosso compromisso é cuidar de cada paciente de forma individual,
+                        respeitando suas necessidades físicas, emocionais e sociais.
+                    </p>
+
+                    <p>
+                        Contamos com uma equipe multidisciplinar formada por profissionais qualificados.
+                    </p>
+                </article>
+
+                <figure class="sobre-imagem">
+                    <img
+                        src="imagens/medico.jpg"
+                        alt="Foto de ilustração, um médico."
+                        width="200"
+                        height="200"
+                    >
+                </figure>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Seção de atendimentos -->
+        <section id="atendimentos">
+
+            <h2>Nossos Atendimentos</h2>
+
+            <p>Atuamos nas seguintes especialidades médicas:</p>
+
+            <!-- Lista não ordenada -->
+            <ul>
+                <li>
+                    <strong>Clínica Geral</strong> – Prevenção, diagnóstico e acompanhamento da saúde.
+                </li>
+                <li>
+                    <strong>Psicologia</strong> – Cuidado com a saúde mental e emocional.
+                </li>
+                <li>
+                    <strong>Pediatria</strong> – Atenção especializada à saúde infantil.
+                </li>
+                <li>
+                    <strong>Oftalmologia</strong> – Avaliação e tratamento da visão.
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Seção Missão, Visão e Valores -->
+        <section id="missao-visao-valores">
+
+            <!-- Cada conceito em um article -->
+            <article>
+                <h2>Missão</h2>
+                <p>
+                    Promover saúde e bem-estar por meio de atendimentos médicos humanizados,
+                    acessíveis e de excelência.
+                </p>
+            </article>
+
+            <article>
+                <h2>Visão</h2>
+                <p>
+                    Ser referência em atendimento médico integrado,
+                    reconhecida pela confiança e qualidade dos serviços prestados.
+                </p>
+            </article>
+
+            <article>
+                <h2>Valores</h2>
+
+                <!-- Lista de valores -->
+                <ul>
+                    <li>Ética e respeito</li>
+                    <li>Humanização no atendimento</li>
+                    <li>Compromisso com a vida</li>
+                    <li>Excelência profissional</li>
+                    <li>Responsabilidade social</li>
+                    <li>Transparência e confiança</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- Seção final de compromisso -->
+        <section id="compromisso">
+
+            <h2>Nosso Compromisso</h2>
+
+            <p>
+                Acreditamos que cuidar da saúde vai além do tratamento de doenças.
+                Nosso objetivo é acolher cada paciente com atenção, respeito e responsabilidade,
+                promovendo qualidade de vida e bem-estar.
+            </p>
+
+        </section>
+
+    </main>
+                
+        </div>
+    
+        <div class="footer">
+                <iframe src="footer.html" frameborder="0" style="width: 100%; border: none; height: 100px;" scrolling="no"></iframe>
+                
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
